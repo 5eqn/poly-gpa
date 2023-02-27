@@ -44,9 +44,9 @@ interval = 60
 
 ## TODO
 
-[ ] GPA Display
-[ ] Customizable Skin and Color
-[ ] More universities
+[] GPA Display
+[] Customizable Skin and Color
+[] More universities
 
 ## 价值观传递
 
