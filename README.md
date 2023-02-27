@@ -1,12 +1,24 @@
-# 哈深级排桌面挂件
+# 级排桌面挂件 Polybar GPA
 
 想要感受到内卷的压力吗？想要时刻用保研线之外的级排鞭策自己吗？
 
-你需要 **poly-gpa**.
+你需要 **poly-gpa**. It displays your Rank in your polybar.
 
-## 使用方法
+## 功能 Domain
 
-### Python 脚本
+### 学校 University
+
+- HITsz
+- Pull requests are welcomed for supporting more universities
+
+### 显示栏目 Type
+
+- Rank
+- GPA (planned)
+
+## 使用方法 Usage
+
+### Python Script
 
 ```
 usage: gpa.py [-h] [-u USERNAME] [-p PASSWORD]
@@ -21,7 +33,7 @@ options:
                         Your password
 ```
 
-### Polybar 对接
+### Polybar Config
 
 ```
 [module/gpa]
@@ -29,6 +41,12 @@ type = custom/script
 exec = ; Execute gpa.py with correct parameters
 interval = 60
 ```
+
+## TODO
+
+[ ] GPA Display
+[ ] Customizable Skin and Color
+[ ] More universities
 
 ## 价值观传递
 
