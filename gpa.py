@@ -53,6 +53,9 @@ cookies.update(response.cookies.get_dict())
 response = session.post(f"{hostName}/cjgl/grcjcx/getgpa", cookies=cookies)
 
 # Get your percentage
-rk = response.json()["PJXFJ_PM"]
-total = response.json()["ZRS"]
-print("%{F#EC7875}RK %{F#C4C7C5}" + f"{rk} / {total}")
+try:
+    rk = response.json()["PJXFJ_PM"]
+    total = response.json()["ZRS"]
+    print("%{F#EC7875}RK %{F#C4C7C5}" + f"{rk}/{total}")
+except:
+    print("%{F#EC7875}RK %{F#C4C7C5}N/A")
